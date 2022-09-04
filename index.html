@@ -188,16 +188,6 @@ setTimeout(e, 1e3 / 60)
 <audio controls autoplay loop>
 		<source src="https://drive.google.com/file/d/11ftS1c2jDSo0HZF2N8tRHa9zB_rXFBW-/view?usp=drivesdk">
 	</audio>
-</body>
-<div class='Switchbtn'>
-<span class='nightly'>Night Mode</span> <input class='togglenight togglenight-switch' id='nightmode' type='checkbox'/>
-<label class='togglenight-btn' for='nightmode'/></div>
-<script type='text/javascript'>
-//<![CDATA[
-// Night Mode
-$("#nightmode").click(function(){$("body").toggleClass("nightmode")}),$("body").toggleClass(localStorage.toggled),$("#nightmode").click(function(){"nightmode"!=localStorage.toggled?($("body").toggleClass("nightmode",!0),localStorage.toggled="nightmode"):($("body").toggleClass("nightmode",!1),localStorage.toggled="")});
-//]]>
-</script>
     <main class="min-h-screen relative bg-gray-50 pb-10">
         <div class="h-60 w-full"><img src="/assets/image/2825826.gif" alt="cover" class="w-full h-full object-cover object-center" /></div>
         <div class="container px-4">
@@ -369,5 +359,14 @@ $("#nightmode").click(function(){$("body").toggleClass("nightmode")}),$("body").
             </div>
         </footer>
     </main>
-
+</body>
+<div class='Switchbtn'>
+<span class='nightly'>Night Mode</span> <input class='togglenight togglenight-switch' id='nightmode' type='checkbox'/>
+<label class='togglenight-btn' for='nightmode'/></div>
+<script type='text/javascript'>
+//<![CDATA[
+// Night Mode
+$("#nightmode").click(function(){$("body").toggleClass("nightmode")}),$("body").toggleClass(localStorage.toggled),$("#nightmode").click(function(){"nightmode"!=localStorage.toggled?($("body").toggleClass("nightmode",!0),localStorage.toggled="nightmode"):($("body").toggleClass("nightmode",!1),localStorage.toggled="")});
+//]]>
+</script>
 </html>
