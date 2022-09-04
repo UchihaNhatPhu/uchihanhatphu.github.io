@@ -166,28 +166,12 @@ setTimeout(e, 1e3 / 60)
     left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
   }
 </style>
-<style type='text/css'>
-/* Night Mode */
-.nightly{color:#999;font-size:13px}
-.Switchbtn{position:fixed;text-align:center;display:inline-block;align-items:center;z-index:100;right:20px;top:20px}
-.togglenight{display:none;}
-.togglenight + .togglenight-btn{outline:0;display:inline-block;width:45px;height:10px;position:relative;cursor:pointer;margin-left:5px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
-.togglenight + .togglenight-btn:after,.togglenight + .togglenight-btn:before{position:relative;display:block;content:"";width:50%;height:100%}
-.togglenight-switch + .togglenight-btn{background:#d5d2fc;border-radius:99em;transition:all .4s ease}
-.togglenight-switch + .togglenight-btn:after{content:'';border-radius:100px;background:#887fff;transition:left 0.3s cubic-bezier(0.175,0.885,0.32,1.275),padding 0.3s ease,margin 0.3s ease;position:absolute;width:20px;height:20px;top:-5px;left:0;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
-.togglenight-switch:checked + .togglenight-btn{background:rgba(255,255,255,.15)}
-.togglenight:checked + .togglenight-btn:after{content:'';left:55%;background:#ff9f43}
-.nightmode{background:#202124;color:rgba(255,255,255,.7)}
-.nightmode a{color:rgba(255,255,255,.7)!important}
-.nightmode a:hover{color:rgba(255,255,255,.4)!important}
-.nightmode .class-baru{}
-.nightmode .class-baru{}
-</style>
     </head>
 <body>
 <audio controls autoplay loop>
-		<source src="https://drive.google.com/file/d/11ftS1c2jDSo0HZF2N8tRHa9zB_rXFBW-/view?usp=drivesdk">
+		<source src="https://drive.google.com/file/d/11ftS1c2jDSo0HZF2N8tRHa9zB_rXFBW-/view?usp=drivesdk" type="audio/mp3">
 	</audio>
+</body>
     <main class="min-h-screen relative bg-gray-50 pb-10">
         <div class="h-60 w-full"><img src="/assets/image/2825826.gif" alt="cover" class="w-full h-full object-cover object-center" /></div>
         <div class="container px-4">
@@ -359,14 +343,5 @@ setTimeout(e, 1e3 / 60)
             </div>
         </footer>
     </main>
-</body>
-<div class='Switchbtn'>
-<span class='nightly'>Night Mode</span> <input class='togglenight togglenight-switch' id='nightmode' type='checkbox'/>
-<label class='togglenight-btn' for='nightmode'/></div>
-<script type='text/javascript'>
-//<![CDATA[
-// Night Mode
-$("#nightmode").click(function(){$("body").toggleClass("nightmode")}),$("body").toggleClass(localStorage.toggled),$("#nightmode").click(function(){"nightmode"!=localStorage.toggled?($("body").toggleClass("nightmode",!0),localStorage.toggled="nightmode"):($("body").toggleClass("nightmode",!1),localStorage.toggled="")});
-//]]>
-</script>
+
 </html>
