@@ -175,6 +175,32 @@ setTimeout(e, 1e3 / 60)
 	html,body{cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;}
 	a:hover{cursor:url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"), auto;}
 </style>
+
+<!-- start codepro music box -->
+<div class='codepro-music-box'>
+	<button class='codepro-music-box-toggle-btn'>
+		<a title='Play music'><i class='fa fa-music'></i></a>
+	</button>
+	<div class='codepro-music-holder'>
+		<iframe allow='autoplay;encrypted-media' allowfullscreen='' frameborder='0' height='auto' src='https://soundcloud.com/raf700slowed/playboi-carti-iloveuihateu-slowedreverb' width='auto'></iframe>
+	</div>
+</div>
+<style>
+	.codepro-music-box{position:fixed;width:300px;height:160px;z-index:120;bottom:30px;left:30px}
+	.codepro-music-box a{color:#fff}
+	@media (max-width: 991px) {.codepro-music-box{width:250px;height:120px;left:auto;left:30px}}
+	.codepro-music-box .codepro-music-holder{width:100%;height:100%;border:2px solid #eee;position:absolute;left:0;top:-30px;visibility:hidden;opacity:0;-webkit-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}
+	.codepro-music-box .codepro-music-holder iframe{width:100%;height:100%}
+	.codepro-music-box button{background:rgba(0,0,0,0.1);width:40px;height:40px;line-height:0;font-size:18px;font-size:1rem;color:#fff;border:1px solid #e6e6e6;outline:0;padding:0;margin:0;position:absolute;left:0;bottom:0;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;border-radius:50%}
+	@media (max-width: 991px) {.codepro-music-box button{left:auto;left:0}}
+	.codepro-music-box .toggle-codepro-music-box{top:-50px;visibility:visible;opacity:1}
+</style>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script type='text/javascript'>//<![CDATA[
+	if($(".codepro-music-box").length) {var musicBtn = $(".codepro-music-box-toggle-btn"),musicBox = $(".codepro-music-holder");musicBtn.on("click", function() {musicBox.toggleClass("toggle-codepro-music-box");return false;})}
+//]]></script>
+<!-- end code music box -->
 </body>
     <main class="min-h-screen relative bg-gray-50 pb-10">
         <div class="h-60 w-full"><img src="/assets/image/2825826.gif" alt="cover" class="w-full h-full object-cover object-center" /></div>
